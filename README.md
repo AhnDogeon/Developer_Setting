@@ -41,5 +41,49 @@ brew install --cask firefox visual-studio-code google-chrome spotify brave-brows
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+powerlevel10k github
 
+Installation -> oh my zsh
+
+git clone 커맨드 복사 후 터미널에서 실행
+
+```bash
+code ~/.zshrc
+```
+
+ZSH_THEME = "robberssell" -> "powerlevel10k/powerlevel10k"
+
+어플리케이션 재시작 후 환경설정에서 취향에 따라 선택
+
+
+
+## 개발환경 세팅
+
+```bash
+brew install python3 go pipenv nvm gh
+```
+
+![image-20220328001223270](/Users/dg/Library/Application Support/typora-user-images/image-20220328001223270.png)
+
+해당 커맨드 복사 후 code에서 실행 후 제일 마지막 줄에 붙여넣기 저장
+
+```bash
+code ~/.zshrc
+```
+
+
+
+터미널 재시작 후 nvm 설치 확인
+
+```bash
+nvm	ls-remote
+```
+
+```bash
+nvm install 17.3.1
+nvm install 16.13.2
+# 둘 다 설치 후 버젼관리
+nvm use default # 17.3.1 사용
+nvm use 16.13.2 # 16.13.2 사용
+```
 
